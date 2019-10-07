@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Original page</title>
+
+    <script>
+        // eg. redirect if detected country is Serbia **based on ip address location
+        fetch('https://api.ipregistry.co/?key=tryout') //register to get API key. This is just tryout key, works only for several attempts from one IP address in certain period of time
+            .then(function(response) {
+                return response.json();
+            })
+            .then(function(json) {
+                if (json['location']['country']['name'] == 'Serbia') {
+                    window.location.assign("index2.html");
+                }
+            });
+    </script>
+</head>
+
+<body>
+    <h1>Original page, nothing to see, move along</h1>
+</body>
+
+</html>

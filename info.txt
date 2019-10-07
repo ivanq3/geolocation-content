@@ -1,0 +1,2 @@
+Just example how to show different content in js based on location using ipregistry.co; "tryout" key in use, register for API key.
+js script in index.html
